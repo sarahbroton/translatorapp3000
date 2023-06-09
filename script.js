@@ -1,6 +1,11 @@
-var textToTranslate = getelementByid("inText")
-var dropDown = getelementByid("dropDown")
-var button = getelementByid("genBtn")
+var textToTranslate = document.querySelector("#inText");
+var dropDown = document.querySelector("#dropDown");
+var button = document.querySelector("#genBtn");
+var outText = document.querySelector("#outText");
+
+button.addEventListener("click", function() {
+    getData();
+  });
 
 async function getData() {
 const url = 'https://opentranslator.p.rapidapi.com/translate';
@@ -12,7 +17,7 @@ const options = {
 		'X-RapidAPI-Host': 'opentranslator.p.rapidapi.com'
 	},
 	body: JSON.stringify({
-		text: textToTranslate,
+		text: textToTranslate.value,
 		target: 'ru'
 	})
 };
@@ -20,9 +25,9 @@ const options = {
 try {
 	const response = await fetch(url, options);
 	const result = await response.text();
-	console.log(JSON.parse(result)[0].result.text);
+	const translatedText = JSON.parse(result)[0].result.text;
+    outText.textContent = translatedText;
+    console.log(translatedText);
 } catch (error) {
-	console.error(error);
+	console.log(error);
 }}
-
-getData()
