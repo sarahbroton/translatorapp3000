@@ -5,23 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <title>Document</title>
 </head>
-<header>Translator App 3000</header>
+<nav class="navbar is-light">Translator App</nav>
+<br>
 <body>
-    <div id="inputText">
-        <input type="text" id="inText">
-    </div>
-    <div id="selector-Btn">
-        <select id="dropDown"></select>
-        <button id="genBtn"></button>
-    </div>
-    <div id="responseText">
-        <output type="text" id="outText">
-    </div>
-    <div id="link">
-        <a>link</a>
+    <div class="columns">
+        <div class="column box">
+            <div id="selector-Btn">
+                <select id="dropDown"></select>
+            </div>
+            <div id="inputText">
+                <textarea class="textarea is-large" placeholder="Enter text to be translated" rows="7" id="inText"></textarea>
+            </div>
+            <div class="columns is-justify-content-end">
+                <button class="button is-info is-light is-rounded" id="genBtn">Translate</button>
+            </div>
+            
+        </div>
+        <div class="column box">
+            <div id="responceText">
+                <textarea class="textarea is-large" rows="7" id="outText" placeholder="Translation"></textarea>
+            </div>
+            <div id="link">
+                <a>link</a>
+            </div>
+        </div>
     </div>
     <script src="./assets/script/script.js"></script>
 </body>
