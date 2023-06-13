@@ -3,12 +3,65 @@ var dropDown = document.querySelector("#dropDown");
 var button = document.querySelector("#genBtn");
 var outText = document.querySelector("#outText");
 
+// On button press 
 button.addEventListener("click", function() {
     getData();
+	translateMinion();
   });
+  const languageOption =[
+	{
+		language: "Arabic",
+		value: "ar"
+	},
+	{
+		language: "Spanish",
+		value: "es"
+	},
+	{
+		language: "Hmong",
+		value: "Hmn"
+	},
+	{
+		language: "French",
+		value: "fr"
+	},
+	{
+		language: "German",
+		value: "de"
+	},
+	{
+		language: "Japanese",
+		value: "ja"
+	},
+	{
+		language: "Russian",
+		value: "ru"
+	},
+	{
+		language: "Korean",
+		value: "ko"
+	},
+  ]
+
+languageOption.forEach(function(option){
+	var optionElement = document.createElement("option")
+	optionElement.value = option.value;
+	optionElement.textContent = option.language;
+	dropDown.appendChild(optionElement);
+})
+
+let minionUrl = "https://api.funtranslations.com/translate/minion.json"
+function translateMinion(){
+let inputValue = textToTranslate.value;
+newUrl = `${minionUrl}?text=${inputValue}`;
+fetch(newUrl).then((data)=>data.json).then((data)=>{
+	console.log(data);
+})
+}
 
 async function getData() {
 const url = 'https://opentranslator.p.rapidapi.com/translate';
+const selectedLanguage = dropDown.value;
 const options = {
 	method: 'POST',
 	headers: {
@@ -18,7 +71,7 @@ const options = {
 	},
 	body: JSON.stringify({
 		text: textToTranslate.value,
-		target: 'ru'
+		target: selectedLanguage
 	})
 };
 
