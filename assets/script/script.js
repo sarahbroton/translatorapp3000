@@ -31,3 +31,11 @@ try {
 } catch (error) {
 	console.log(error);
 }}
+
+
+async function getData() {
+ const url = 'https://api.funtranslations.com/translate/pirate.json?text=Hello%20sir%21%20my%20mother%20goes%20with%20me%20to%20the%20ocean.'
+
+
+}
+
