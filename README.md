@@ -16,6 +16,10 @@ Provide a short description explaining the what, why, and how of your project. U
 - What problem does it solve?
 - What did you learn?
 
+Our motivation to build this Translator App 3000 is because ....
+
+We decided to build this project (Translator App 3000) is to challenge ourselves in using our skills that we have learned. Also to learn how to work together as a team and as an individual.
+
 ## User Story
 
 
