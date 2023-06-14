@@ -4,7 +4,16 @@ var button = document.querySelector("#genBtn");
 var outText = document.querySelector("#outText");
 var link = document.querySelector("#link")
 var saveBtn =document.querySelector("#saveBtn")
+var returnLink = document.querySelector("#returnLink")
 
+
+link.addEventListener("click", function(){
+	switchToSaved();
+})
+
+saveBtn.addEventListener("click", function(){
+	saveTranslation();
+});
 // On button press 
 button.addEventListener("click", function() {
 	let selectedLanguage = dropDown.value;
@@ -104,3 +113,38 @@ try {
 	console.log(error);
 }}
 
+function saveTranslation(){
+	let translatedText = outText.textContent;
+
+	if (translatedText) {
+		let savedTranslations = localStorage.getItem("translations");
+		let saveArray = []
+		let translationObject = {
+			"textToTranslate": textToTranslate.value, 
+			"translatedText": translatedText
+		};
+		saveArray.push(translationObject)
+		if (savedTranslations) {
+			JSON.parse(savedTranslations)
+			console.log(savedTranslations)
+		}
+		else {
+			localStorage.setItem("translations", JSON.stringify(saveArray))
+		}
+		console.log(savedTranslations)
+		/*savedTranslations = savedTranslations ? JSON.parse(savedTranslations): [];
+
+		savedTranslations.push(translatedText);
+
+		localStorage.setItem("translations", JSON.stringify({
+			"textToTranslate": textToTranslate.value, 
+			"translatedText": translatedText
+		}));*/
+		console.log("translations Successfully saved")
+	}
+
+};
+
+function switchToSaved(){
+	window.location.href = 'Saved.html';
+}

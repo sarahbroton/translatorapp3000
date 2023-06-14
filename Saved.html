@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>Saved Translations</header>
+    <a id="returnLink" href="index.html">Return to page</a>
+    <ul id="savedTranslations"></ul>
+
+    <script>
+        var returnLink = document.querySelector("#returnLink");
+
+        returnLink.addEventListener("click", function() {
+        switchToIndex();
+        });
+
+        function switchToIndex() {
+        window.location.href = 'index.html';
+        }
+    </script>
+</body>
+</html>
+</html>
