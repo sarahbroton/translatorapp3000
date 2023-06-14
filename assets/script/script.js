@@ -2,11 +2,17 @@ var textToTranslate = document.querySelector("#inText");
 var dropDown = document.querySelector("#dropDown");
 var button = document.querySelector("#genBtn");
 var outText = document.querySelector("#outText");
+var link = document.querySelector("#link")
+var saveBtn =document.querySelector("#saveBtn")
 
 // On button press 
 button.addEventListener("click", function() {
-    getData();
-	translateMinion();
+	let selectedLanguage = dropDown.value;
+	if (selectedLanguage === "minion"){
+		translateMinion();
+	} else{
+		getData();
+	}  
   });
   const languageOption =[
 	{
@@ -41,23 +47,36 @@ button.addEventListener("click", function() {
 		language: "Korean",
 		value: "ko"
 	},
+	{
+		language: "Minion",
+		value: "minion"
+	},
   ]
 
 languageOption.forEach(function(option){
 	var optionElement = document.createElement("option")
-	optionElement.value = option.value;
+	optionElement.value = option.value;saveBtn
 	optionElement.textContent = option.language;
 	dropDown.appendChild(optionElement);
 })
 
 let minionUrl = "https://api.funtranslations.com/translate/minion.json"
 function translateMinion(){
-let inputValue = textToTranslate.value;
-newUrl = `${minionUrl}?text=${inputValue}`;
-fetch(newUrl).then((data)=>data.json).then((data)=>{
-	console.log(data);
+	let inputValue = textToTranslate.value;
+	let selectedLanguage = dropDown.value;
+
+if (selectedLanguage === "minion"){
+var newUrl = `${minionUrl}?text=${inputValue}`;}
+
+fetch(newUrl)
+	.then((data)=>data.json())
+	.then((data)=>{
+		console.log(data);
+		outText.textContent = data.contents.translated;
+		
 })
 }
+
 
 async function getData() {
 const url = 'https://opentranslator.p.rapidapi.com/translate';
@@ -84,11 +103,4 @@ try {
 } catch (error) {
 	console.log(error);
 }}
-
-
-async function getData() {
- const url = 'https://api.funtranslations.com/translate/pirate.json?text=Hello%20sir%21%20my%20mother%20goes%20with%20me%20to%20the%20ocean.'
-
-
-}
 
