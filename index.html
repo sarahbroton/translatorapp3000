@@ -13,23 +13,22 @@
 <body>
     <div class="columns">
         <div class="column box">
-            <div id="selector-Btn">
-                <select id="dropDown"></select>
-            </div>
             <div id="inputText">
                 <textarea class="textarea is-large" placeholder="Enter text to be translated" rows="7" id="inText"></textarea>
             </div>
+            <div class="select">
+                <select id="dropDown"></select>
+            </div>
             <div class="columns is-justify-content-end">
                 <button class="button is-info is-light is-rounded" id="genBtn">Translate</button>
-            </div>
-            
+            </div>           
         </div>
         <div class="column box">
-            <div id="responceText">
+            <div id="responseText">
                 <textarea class="textarea is-large" rows="7" id="outText" placeholder="Translation"></textarea>
             </div>
-            <div id="link">
-                <button id="saveBtn"></button>
+            <div class="columns" id="link">
+                <button class="button is-success is-light is-rounded" id="saveBtn">Save Translation</button>
                 <a>link</a>
             </div>
         </div>

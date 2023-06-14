@@ -3,7 +3,8 @@ var dropDown = document.querySelector("#dropDown");
 var button = document.querySelector("#genBtn");
 var outText = document.querySelector("#outText");
 var link = document.querySelector("#link")
-var saveBtn =document.querySelector("#saveBtn")
+var saveBtn = document.querySelector("#saveBtn")
+var dropdownContainer = document.querySelector('.dropdown');
 
 // On button press 
 button.addEventListener("click", function() {
@@ -55,9 +56,9 @@ button.addEventListener("click", function() {
 
 languageOption.forEach(function(option){
 	var optionElement = document.createElement("option")
-	optionElement.value = option.value;saveBtn
 	optionElement.textContent = option.language;
 	dropDown.appendChild(optionElement);
+	// optionElement.value = option.value;saveBtn
 })
 
 let minionUrl = "https://api.funtranslations.com/translate/minion.json"
@@ -103,4 +104,3 @@ try {
 } catch (error) {
 	console.log(error);
 }}
-
