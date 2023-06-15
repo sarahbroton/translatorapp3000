@@ -1,26 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Document</title>
 </head>
+
 <body>
     <header>Saved Translations</header>
-    <a id="returnLink" href="index.html">Return to page</a>
+   <img src="assets/images/pt2.jpg">
     <ul id="savedTranslations"></ul>
-
+    <div>
+        <p>save translation inserted here</p>
+    </div>
+    <a id="returnLink" href="index.html">Return to page</a>
     <script>
         var returnLink = document.querySelector("#returnLink");
 
-        returnLink.addEventListener("click", function() {
-        switchToIndex();
+        returnLink.addEventListener("click", function () {
+            switchToIndex();
         });
 
         function switchToIndex() {
-        window.location.href = 'index.html';
+            window.location.href = 'index.html';
         }
     </script>
 </body>
+<footer>
+    <h2>Created by: Sarah Broton, Max Halverson, Paysen Lund and Nina Lor
+    </h2>
+</footer>
+
 </html>
+
 </html>

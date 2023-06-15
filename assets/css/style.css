@@ -1,9 +1,56 @@
-*{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+* {
+    border: 10;
+    margin: 10px;
+    padding: 10px;
 }
 
-header{
-    font-size: 35px;
+header {
+    color: yellow;
+    background-color: rgb(46, 46, 236);
+    float: right;
+    font-size: 45px;
     font-weight: bolder;
     text-align: center;
 }
+
+img{
+    float:left;
+}
+
+#returnLink{
+    font-weight: bolder;
+}
+
+p {
+    float: right;
+    width: 300px;
+    border: 15px solid yellow;
+    padding: 20px;
+    margin: 10px;
+}
+
+footer {
+    width: 20px 20px 20px 20px;
+    color: yellow;
+    background-color: rgb(46, 46, 236);
+    padding: 20px;
+}
+h2{
+    color: yellow;
+    background-color: rgb(46, 46, 236);
+}
+/* max screen  need more editing*/
+@media screen and (max-width: 992px) {
+    .card {
+      width: 50%;
+    }
+ 
+    header {
+      background: #772014;
+    }
+
+    h2{
+        background: #772014;
+    }
+  }
+
