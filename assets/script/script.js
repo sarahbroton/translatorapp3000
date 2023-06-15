@@ -15,7 +15,7 @@ link.addEventListener("click", function(){
 saveBtn.addEventListener("click", function(){
 	saveTranslation();
 });
-// On button press 
+
 button.addEventListener("click", function() {
 	let selectedLanguage = dropDown.value;
 	if (selectedLanguage === "minion"){
@@ -67,25 +67,25 @@ languageOption.forEach(function(option){
 	var optionElement = document.createElement("option")
 	optionElement.textContent = option.language;
 	dropDown.appendChild(optionElement);
-	// optionElement.value = option.value;saveBtn
+	optionElement.value = option.value;saveBtn
 })
 
 let minionUrl = "https://api.funtranslations.com/translate/minion.json"
-function translateMinion(){
+function translateMinion() {
 	let inputValue = textToTranslate.value;
 	let selectedLanguage = dropDown.value;
-
-if (selectedLanguage === "minion"){
-var newUrl = `${minionUrl}?text=${inputValue}`;}
-
-fetch(newUrl)
-	.then((data)=>data.json())
-	.then((data)=>{
-		console.log(data);
-		outText.textContent = data.contents.translated;
-		
-})
-}
+  
+	if (selectedLanguage === "minion") {
+	  var newUrl = `${minionUrl}?text=${inputValue}`;
+  
+	  fetch(newUrl)
+		.then((data) => data.json())
+		.then((data) => {
+		  console.log(data);
+		  outText.textContent = data.contents.translated;
+		});
+	}
+  }
 
 
 async function getData() {
@@ -114,39 +114,34 @@ try {
 	console.log(error);
 }}
 
-function saveTranslation(){
+function saveTranslation() {
 	let translatedText = outText.textContent;
-
-	if (translatedText) {
-		let savedTranslations = localStorage.getItem("translations");
-		let saveArray = []
-		let translationObject = {
-			"textToTranslate": textToTranslate.value, 
-			"translatedText": translatedText
-		};
-		saveArray.push(translationObject)
-		if (savedTranslations) {
-			JSON.parse(savedTranslations)
-			console.log(savedTranslations)
-		}
-		else {
-			localStorage.setItem("translations", JSON.stringify(saveArray))
-		}
-		console.log(savedTranslations)
-		/*savedTranslations = savedTranslations ? JSON.parse(savedTranslations): [];
-
-		savedTranslations.push(translatedText);
-
-		localStorage.setItem("translations", JSON.stringify({
-			"textToTranslate": textToTranslate.value, 
-			"translatedText": translatedText
-		}));*/
-		console.log("translations Successfully saved")
+	let textToTranslateValue = textToTranslate.value;
+  
+	if (translatedText && textToTranslateValue) {
+	  let savedTranslations = localStorage.getItem("translations");
+	  let saveArray = [];
+  
+	  if (savedTranslations) {
+		saveArray = JSON.parse(savedTranslations);
+	  }
+  
+	  let translationObject = {
+		textToTranslate: textToTranslateValue,
+		translatedText: translatedText
+	  };
+  
+	  saveArray.push(translationObject);
+	  localStorage.setItem("translations", JSON.stringify(saveArray));
+  
+	  console.log("Translations successfully saved");
 	}
-
-};
+  };
 
 function switchToSaved(){
 	window.location.href = 'Saved.html';
 }
 
+function saveToPage() {
+	getitem.localStorage()
+}
