@@ -4,23 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Document</title>
 </head>
 
 <body>
-    <header>Saved Translations</header>
+    <nav class="navbar is-link">
+        <h1>Saved Translations</h1>
+    </nav>
+    <div class="card">
+        <a id="returnLink" href="index.html">Return to page</a>
+    </div>
     <main>
-        <div>
+        <div class="card">
+            <h2 class="card">save translation inserted here "Im con a banana"</h2>
             <img src="assets/images/pt2.jpg">
         </div>
         <ul id="savedTranslations"></ul>
-        <div>
-            <h2>save translation inserted here</h2>
-        </div>
     </main>
-    <div>
-        <a id="returnLink" href="index.html">Return to page</a>
+    
+    <div class="card">
+        <img src="./assets/images/minion&banana.jpg" class="mb">
     </div>
     <script>
         var returnLink = document.querySelector("#returnLink");
@@ -33,15 +38,14 @@
             window.location.href = 'index.html';
         }
     </script>
-</body>
-<br>
-<br>
-<br>
-<footer>
-    <h3>Created by: Sarah Broton, Max Halverson, Paysen Lund and Nina Lor
-    </h3>
-</footer>
 
-</html>
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <h3 class="display">Created by: Sarah Broton, Max Halverson, Paysen Lund and Nina Lor</h3>
+        </div>
+    </footer>
+
+</body>
+
 
 </html>
