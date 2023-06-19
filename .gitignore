@@ -1,0 +1,9 @@
+This is file is the CSS styling for the Saved.html 
+* There are 6 different responsives that was added.
+* The first Wide 2685px.
+* The second wide view 2560px (4k).
+* The third view 1440px (Laptop L).
+* The fourth view 1024px (Laptop).
+* The fifth view 768px (Tablet).
+* The sixth view 425px (Mobile L and smaller) will have the same repsonsive as 425 repsonsive.
+* Since background colors is added in the main css. As different responsives are being view, it should be all the same color.
