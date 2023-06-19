@@ -14,9 +14,8 @@
         <div>
             <img src="assets/images/pt2.jpg">
         </div>
-        <ul id="savedTranslations"></ul>
         <div>
-            <h2>save translation inserted here</h2>
+            <h2 id="savedTranslations"></h2>
         </div>
     </main>
     <div>
@@ -32,6 +31,21 @@
         function switchToIndex() {
             window.location.href = 'index.html';
         }
+
+        function saveToPage() {
+            let savedTranslationsData = localStorage.getItem("translations");
+            if (savedTranslationsData) {
+                savedTranslationsData = JSON.parse(savedTranslationsData);
+                var savedTranslationsList = document.querySelector("#savedTranslations");
+                savedTranslationsData.forEach(function (translation) {
+                    let translationElement = document.createElement("li");
+                    translationElement.textContent = `Text to Translate: ${translation.textToTranslate}, Translated Text: ${translation.translatedText}`;
+                    savedTranslationsList.appendChild(translationElement);
+                });
+            }
+        }
+
+        saveToPage(); 
     </script>
 </body>
 <br>
