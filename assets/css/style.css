@@ -1,7 +1,8 @@
 * {
     text-align: center;
-    padding: 3px;
+    padding: 5px;
     margin: 10px, 10px, 10px, 10px;
+
 }
 
 nav,
@@ -12,14 +13,14 @@ nav,
 
 h2,
 .card {
+    background-image: linear-gradient(rgb(255, 247, 0), rgb(0, 179, 255));
     color: rgb(43, 43, 223);
     text-align: center;
     height: 300px;
-    font-size: 25px;
+    font-size: 150px;
     width: 500px;
-    border: 15px solid yellow;
+    border: 15px solid rgb(255, 251, 0);
     float: right;
-    display: flex;
 }
 
 img,
@@ -42,6 +43,7 @@ p,
 }
 
 footer {
+    background-image: linear-gradient(rgb(255, 247, 0), rgb(0, 179, 255));
     width: 800px;
     border: 15px solid yellow;
     display: flex;
@@ -61,13 +63,21 @@ p,
 
 }
 
+#returnLink {
+    font-size: 35px;
+}
+
+.return {
+    background-image: linear-gradient(rgb(255, 247, 0), rgb(0, 179, 255));
+}
+
 @media screen and (max-width: 2685px) {
 
     h2,
     .card {
-        font-size: 45px;
-        height: 680px;
-        width: 500px;
+        font-size: 50px;
+        height: 665px;
+        width: 600px;
     }
 
     img,
@@ -90,17 +100,23 @@ p,
     }
 
     .mb {
-        width: 18%;
-        height: auto;
+        width: 600px;
+        height: 650px;
     }
+
+    a,
+    #returnLink {
+        font-size: 50px;
+    }
+
 }
 
 @media screen and (max-width: 2560px) {
 
     h2,
     .card {
-        font-size: 45px;
-        height: 680px;
+        font-size: 50px;
+        height: 650px;
         width: 500px;
     }
 
@@ -123,9 +139,14 @@ p,
         height: auto;
     }
 
+    p,
     .mb {
-        width: 18%;
-        height: auto;
+        width: 500px;
+        height: 640px;
+    }
+
+    #returnLink {
+        font-size: 50px;
     }
 }
 
@@ -163,14 +184,18 @@ p,
         height: auto;
     }
 
+    #returnLink {
+        font-size: 35px;
+    }
+
 }
 
 @media screen and (max-width: 1024px) {
 
     img,
     .minion {
-        height: 35%;
-        width: 35%;
+        height: 300px;
+        width: 400px;
     }
 
     h2,
@@ -182,20 +207,24 @@ p,
 
     img,
     .mb {
-        height: 20%;
-        width: 20%;
+        height: 300px;
+        width: 200px;
     }
 
     footer {
         height: 50%;
         width: 100%;
     }
+
     p,
     .display {
-        text-align: center;
-        font-size: 35px;
+        font-size: 28px;
         width: auto;
         height: auto;
+    }
+
+    #returnLink {
+        font-size: 35px;
     }
 
 }
@@ -218,7 +247,7 @@ p,
 
     img,
     .mb {
-        height:450px;
+        height: 450px;
         width: 300px;
     }
 
@@ -226,12 +255,17 @@ p,
         margin: 5px;
         width: 100%;
     }
+
     p,
     .display {
         text-align: center;
         font-size: 35px;
         width: auto;
         height: auto;
+    }
+
+    #returnLink {
+        font-size: 30px;
     }
 }
 
@@ -260,12 +294,17 @@ p,
     footer {
         width: 100%;
     }
+
     p,
     .display {
         text-align: center;
-        font-size: 35px;
+        font-size: 30px;
         width: auto;
         height: auto;
+    }
+
+    #returnLink {
+        font-size: 20px;
     }
 
 }
