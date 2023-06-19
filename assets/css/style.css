@@ -1,44 +1,58 @@
-* {
-    border: 10;
-    margin: 10px;
-    padding: 10px;
+nav,.navbar.is-link {
+    font-size: 40px;
+
 }
 
-header {
-    color: yellow;
-    background-color: rgb(46, 46, 236);
-    float: right;
-    font-size: 40px;
-    font-weight: bolder;
+nav, p{
     text-align: center;
 }
 
-img{
-    height: auto;
-    max-width: 28%;
-    float:left;
-}
-
-#returnLink{
-    font-weight: bolder;
-}
-
 h2 {
-    float: right;
-    width: 300px;
+    color: rgb(43, 43, 223);
+    text-align: center;
+    height: 300px;
+    font-size: 25px;
+    width: 500px;
     border: 15px solid yellow;
-    padding: 20px;
-    margin: 10px;
+    float: right
 }
 
 footer {
-    font-size: 10px;
-    width: 20px 20px 20px 20px;
-    color: yellow;
-    background-color: rgb(46, 46, 236);
-
+    width: 900px;
+    border: 15px solid yellow;
 }
-h2{
-    color: yellow;
-    background-color: rgb(46, 46, 236);
+
+.mb {
+    float: right;
+    max-width: 25%;
+    height: 25%;
+}
+
+@media screen and (max-width: 992px) {
+    .card {
+        width: 50%;
+    }
+
+    main {
+        background: rgb(85, 26, 26)
+    }
+
+    h2 {
+
+        background: rgb(85, 26, 26)
+    }
+
+    img {
+        width: 50%; /* leave width here - responsive*/
+        background: rgb(85, 26, 26)
+    }
+
+    .mb {
+        width: 100%;
+        background: rgb(85, 26, 26)
+    }
+    .footer{ /* leave this here - responsive*/
+        width: 100%;
+        background: rgb(85, 26, 26)
+    }
 }
