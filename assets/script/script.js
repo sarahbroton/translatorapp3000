@@ -6,6 +6,7 @@ var link = document.querySelector("#link")
 var saveBtn = document.querySelector("#saveBtn")
 var dropdownContainer = document.querySelector('.dropdown');
 var returnLink = document.querySelector("#returnLink")
+var savedTranslations = document.querySelector("#savedTranslations")
 
 
 link.addEventListener("click", function(){
@@ -140,8 +141,4 @@ function saveTranslation() {
 
 function switchToSaved(){
 	window.location.href = 'Saved.html';
-}
-
-function saveToPage() {
-	getitem.localStorage()
 }
