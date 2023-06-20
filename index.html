@@ -6,35 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="./assets/css/main-style.css">
     <title>Document</title>
 </head>
-<nav class="navbar is-light">Translator App</nav>
-<p>Are you struggling to transtlate languages? Are you someone who really loves minion from the hit movie Dispicable Me? Use this user friendly translater today. See your words transformed into Arabic, Spanish, Hmong, French, German, Japanese, Russian, Korean, and Minion with the TRANSLATOR APP 3000. This app/website was built as a fun project to test our developer (developing) skills and for you to use to translate your English words into another language.</p>
-<br>
+
+<section class="hero is-link">
+    <div class="hero-body columns is-align-items-center">
+        <div class="column is-flex-direction-column" id="hero-text-column">
+            <h1 class="title is-size-1 mb-6">Translator App 3000</h1>
+            <p class="subtitle mb-1">Translate from English to many different languages, including minion!</p>
+            <p class="subtitle">Select the language you want to translate to using the dropdown below</p>
+        </div>
+        <div class="column">
+            <figure class="image is-2by1">
+                <img src="./assets/images/hero image.png">
+            </figure>
+        </div>
+    </div>
+</section>
+
 <body>
+    <div class="choices">
+        <div class="select">
+            <select id="dropDown"></select>
+        </div>
+        <button class="button is-info is-light" id="genBtn">Translate</button>
+        <button class="button is-info is-light" id="saveBtn">Save Translation</button>
+        <a class="button is-info is-light" href="./Saved.html" id="link">View Saved Translations</a>
+    </div>
     <div class="columns">
-        <div class="column box">
+        <div class="column">
             <div id="inputText">
                 <textarea class="textarea is-large" placeholder="Enter text to be translated" rows="7" id="inText"></textarea>
             </div>
-            <div class="select">
-                <select id="dropDown"></select>
-            </div>
-            <div class="columns is-justify-content-end">
-                <button class="button is-info is-light is-rounded" id="genBtn">Translate</button>
-            </div>           
         </div>
-        <div class="column box">
+        <div class="column">
             <div id="responseText">
-                <textarea class="textarea is-large" rows="7" id="outText" placeholder="Translation"></textarea>
-            </div>
-            <div class="columns">
-                <button class="button is-success is-light is-rounded" id="saveBtn">Save Translation</button>
-            <div id="link">
-                <a href="Saved.html">link</a>
+                <textarea class="textarea is-large" readonly rows="7" id="outText" placeholder="Translation"></textarea>
             </div>
         </div>
     </div>
+
     <script src="./assets/script/script.js"></script>
 </body>
 </html>
