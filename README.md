@@ -34,10 +34,11 @@ With the App, users can effortlessly enter in text (in English) and convert it t
 3.  CSS Framework: Bulma
 
 ## Future Development Ideas
-1. text to talk, voice - listen to the translated text
-2. Add more lanauages to translate into text to include but not limited to:  pirate, Dothraki, Old English, Shakespeare, Elvish, Valley Girl, Ferb Latin, Pig Latin, dwarvish, Star Wars languages: Yoda, Gungan, Sith, Tusken and Star Trek languages: Vulcan, Tamarian, Ferengi, Klingon, etc...
-3. Add features such as a movie language converter which translates any movie (video's audio to any language)
-4. Create a "talk-back" feature where one can have a conversation with the app
+1. Adding a button to clear translations that have been saved
+2. text to talk, voice - listen to the translated text
+3. Add more lanauages to translate into text to include but not limited to:  pirate, Dothraki, Old English, Shakespeare, Elvish, Valley Girl, Ferb Latin, Pig Latin, dwarvish, Star Wars languages: Yoda, Gungan, Sith, Tusken and Star Trek languages: Vulcan, Tamarian, Ferengi, Klingon, etc...
+4. Add features such as a movie language converter which translates any movie (video's audio to any language)
+5. Create a "talk-back" feature where one can have a conversation with the app
 
 ## Learned skills
 - Working together as a team in a developer environment
@@ -50,7 +51,7 @@ With the App, users can effortlessly enter in text (in English) and convert it t
 - We welcome contributions!  Here are some ways you can get started:
 
 1.  Report bugs:  If you encouter any bugs, please let us know by opening up an issues and let us know the problem
-2.  Contribute Code:  If you are a developer and want to contirbute, follow the instructions below to get started
+2.  Contribute Code:  If you are a developer and want to contribute, follow the instructions below to get started
 3.  Suggestions:  If you don't want to code and have some awesome ideas, open up an issue explaining some updates or improvements you would like to see
 4.  Documentation:  If you see the need for some additional documentation, feel free to add some
 
@@ -78,16 +79,22 @@ With the App, users can effortlessly enter in text (in English) and convert it t
 >
 >Other sources may apply, see GitHub under resolved issues
 
+## Image credits
+- https://www.pngegg.com/en/png-ewvmm
+- https://www.google.com/search?q=3+minions&tbm=isch&chips=q:3+minions,g_1:three:s1aHa[…]UKEwigt-jR4ND_AhUfJN4AHZFPAvUQ4lYoBHoECAEQNg&biw=1263&bih=649
+- https://www.google.com/search?q=minion+and+bananas&tbm=isch&ved=2ahUKEwjauIj04ND_AhX[…]-LYPrLOLkA0&bih=649&biw=1263&rlz=1C1ONGR_enUS1049US1049&hl=en
+
+
 ## License
 
 This project is licensed under the terms as the MIT license found in GitHub. 
 
 ## Mock-up (Screenshots)
 
----->image here<-----------
+![image](https://github.com/sarahbroton/translatorapp3000/assets/130716239/c4dfd0fb-6d4b-4d2f-9b78-097880d80be0)
+
+![image](https://github.com/sarahbroton/translatorapp3000/assets/130716239/6bf02945-dead-4b19-90ca-37c604f7bce4)
 
 ## Link
-
----->Enter link here<------
 
 https://sarahbroton.github.io/translatorapp3000/
