@@ -12,7 +12,7 @@ With the App, users can effortlessly enter in text (in English) and convert it t
 >
 >I want to pass a few moments (or hours) doing something fun, 
 >
->so that I can look busy while I am working!
+>so that I can look busy while I am working (or actually using it to translate).
 >
 ## Acceptance Criteria
 >
@@ -28,8 +28,8 @@ With the App, users can effortlessly enter in text (in English) and convert it t
 
 ## Technologies Used
 >
-1.  API: https://opentranslator.p.rapidapi.com/translate
-    API:  https://api.funtranslations.com/translate/minion.json
+1.  - API: https://opentranslator.p.rapidapi.com/translate
+    - API:  https://api.funtranslations.com/translate/minion.json
 2.  JQuery
 3.  CSS Framework: Bulma
 
@@ -90,4 +90,4 @@ This project is licensed under the terms as the MIT license found in GitHub.
 
 ---->Enter link here<------
 
----
+https://sarahbroton.github.io/translatorapp3000/

@@ -1,46 +1,35 @@
 * {
-    border: 10;
-    margin: 10px;
-    padding: 10px;
-}
-
-header {
-    color: yellow;
-    background-color: rgb(46, 46, 236);
-    float: right;
-    font-size: 40px;
-    font-weight: bolder;
     text-align: center;
+    padding: 5px;
+    margin: 10px, 10px, 10px, 10px;
 }
 
 
-img{
-    height: auto;
-    max-width: 28%;
-    float:left;
-}
-
-#returnLink{
-    font-weight: bolder;
-}
-
-h2 {
-    float: right;
-    width: 300px;
-    border: 15px solid yellow;
-    padding: 20px;
-    margin: 10px;
-}
-
-footer {
-    font-size: 10px;
-    width: 20px 20px 20px 20px;
-    color: yellow;
-    background-color: rgb(46, 46, 236);
+*, .return{
+    font-size: 45px;
 
 }
-h2{
-    color: yellow;
-    background-color: rgb(46, 46, 236);
+
+.return{
+    background-image: linear-gradient(rgb(255, 247, 0), rgb(0, 179, 255));
+}
+
+.minion{
+    border: 15px solid rgb(43, 43, 223);
+}
+
+li{
+    border: 15px solid rgb(43, 43, 223);
+    list-style-type: none;
+    background-image: linear-gradient(rgb(255, 247, 0), rgb(0, 179, 255));
+}
+
+.mb{
+    border: 15px solid rgb(43, 43, 223);
+}
+
+footer{
+    background-image: linear-gradient(rgb(255, 247, 0), rgb(0, 179, 255));
+    border: 15px solid rgb(43, 43, 223);
 }
 
