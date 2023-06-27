@@ -10,23 +10,22 @@
 </head>
 
 <body>
-    <nav class="navbar is-link">
+    <nav class="navbar is-link is-align-items-center">
         <h1>Saved Translations</h1>
+        <div class="column is-flex-direction-column">
+            <img src="assets/images/pt2.jpg" id="minion">
+        </div>
     </nav>
     <div class="return">
         <a id="returnLink" href="index.html">Return to page</a>
     </div>
     <main>
-        <div class="columns">
-            <div class="column is-one-third">
-                <img src="assets/images/pt2.jpg" class="minion">
-            </div>
-            <div class="column is-one-third">
-                <h3 id="savedTranslations"></h3>
-            </div>
-            <div class="column is-one-third">
-                <img src="./assets/images/minion&banana.jpg" class="mb">
-            </div>
+        <div class="column is-half">
+            <h3 id="savedTranslations"></h3>
+        </div>
+        <div class="column is-align-items-right">
+            <img src="./assets/images/minion&banana.jpg" class="mb">
+        </div>
     </main>
     <script>
         var returnLink = document.querySelector("#returnLink");
@@ -56,10 +55,10 @@
     </script>
 
     <div>
-    <footer id="footer is-full">
-        <p>Created by: Sarah Broton, Max Halverson, Paysen Lund and Nina Lor</p>
-    </footer>
-</div>
+        <footer id="footer is-full">
+            <p>Created by: Sarah Broton, Max Halverson, Paysen Lund and Nina Lor</p>
+        </footer>
+    </div>
 </body>
 
 </html>
